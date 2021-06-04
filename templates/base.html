@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Quiz App</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css"> -->
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+    <link rel="stylesheet" href="{% static '/mobile.css' %}">
+    <script type='text/javascript' href="{% static '/js/mobile.js' %}"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <h1><a href="/">Quiz App<span>You can do it</span></a></h1>
+        <ul id="navigation">
+            <li class="current">
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/login">login</a>
+            </li>
+            <li>
+                <a href="/register">register</a>
+                
+            </li>
+            <li>
+                <a href="/view_score">Dashboard</a>
+            </li>
+            <li>
+                <a href="/logout">logout</a>
+            </li>
+        </ul>
+    </div>
+
+{% block content %}
+
+{% endblock %}
+    
+    
+</body>
+</html>
